@@ -1,0 +1,11 @@
+.icon, .icon-normal {
+  display: flex;
+}
+
+.icon-inverted {
+  fill: #f9faff;
+}
+
+a .icon-inverted:hover {
+  fill: white;
+}

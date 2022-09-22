@@ -1,0 +1,11 @@
+.content {
+  background-color: #ffffff; 
+  color: #4f6fc4;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  flex-grow: 1;
+  border-right: 1px solid #4869bf;
+}

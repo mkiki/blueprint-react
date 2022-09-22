@@ -1,0 +1,17 @@
+.shell {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+  height: 100vh;
+  border-bottom: 1px solid #4869bf;
+  border-left: 1px solid #4869bf;
+}
+
+.shell-body {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  width: 100%;
+  height: 100vh;
+}

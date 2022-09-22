@@ -1,0 +1,16 @@
+.menuItem {
+  font-size: 12px;
+  margin-left: 16px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.menuItem a { 
+  color: #4f6fc4;
+  text-decoration: none;
+}
+
+.menuItem a:hover { 
+  color: #4f6fc4;
+  text-decoration: underline  ;
+}

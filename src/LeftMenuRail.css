@@ -1,0 +1,38 @@
+.leftMenuRail {
+  background-color: #f9faff;
+  color: #4f6fc4;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #4869bf;
+  padding: 0;
+  flex-grow: 1;
+  padding-top: 32px;
+}
+
+.leftMenuRail-collapsed {
+  width: 32px;
+}
+
+.leftMenuRail .menuItem {
+  display: flex;
+  flex-direction: row;
+  fill: #4f6fc4;
+}
+
+.leftMenuRail .menuItem .icon {
+  display: flex;
+  padding-right: 8px;
+}
+
+.leftMenuRail .menutItem-title {
+  margin-top: 4px;
+}
+
+.leftMenuRail-collapsed .menuItem {
+  margin-left: 8px;
+}
+
+.leftMenuRail-collapsed .menutItem-title, .leftMenuRail-collapsed .menu {
+  visibility: hidden;
+}

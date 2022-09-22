@@ -1,0 +1,11 @@
+.rightRail {
+  background-color: #f9faff;
+  color: #4f6fc4;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #4869bf;
+  padding: 0;
+  flex-grow: 1;
+  padding-top: 32px;
+}

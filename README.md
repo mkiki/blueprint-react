@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+# React-based Component Library for a blueprint style
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Build
+```sh
+npm i
+```
 
-## Available Scripts
+Run
+```sh
+npm start
+```
 
-In the project directory, you can run:
+# Components
 
-### `yarn start`
+![Overview](./doc/images/Overview.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Shell, ShellBody, Content
+An application shell. At current time this component is not generic
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```jsx
+<Shell>
+  <HeaderBar title="Welcome to React-Blueprints" logo="anchor"></HeaderBar>
+  <ShellBody>
+    <LeftMenuRail collapsed={false}></LeftMenuRail>
+    <Content>
+      <BreadCrumb items={[ "Audiences", "Add new audience source" ]}></BreadCrumb>
+      <RightRail></RightRail>
+    </Content>
+  </ShellBody>
+</Shell>
+```
 
-### `yarn test`
+## HeaderBar
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+An horizontal header bar. At current time this component is not generic
 
-### `yarn build`
+## LeftMenuRail
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+A left-side navigation rail. At current time this component is not generic
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## RightRail
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+A right-side properties rail. At current time this component is not generic
 
-### `yarn eject`
+## BreadCrumb
+A breadcrumb component
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![BreadCrumb](./doc/images/BreadCrumb.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+| prop | Comment / Description |
+|----|---|
+| items | An array of breadcrumb items. Each item in the array is a string with the breadcrumb text
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Form
+An HTML form which lays out is children in column.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+| prop | Comment / Description |
+|----|---|
 
-## Learn More
+## Icon
+A inline icon. Only a few icons are available: "anchor", "bell", "apps", "search", "login", "help", and "home"
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Icon](./doc/images/Icon.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+| prop | Comment / Description |
+|----|---|
+| name | The icon name
+| style | The icon style: "normal" or "inverted"
 
-### Code Splitting
+## Menu
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+A vertical menu to display in a left-side navigation rail.
 
-### Analyzing the Bundle Size
+![Menu](./doc/images/Menu.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+| prop | Comment / Description |
+|----|---|
+| title | the menu title
 
-### Making a Progressive Web App
+## MenuItem
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+An item in a menu, made of an icon and a label
 
-### Advanced Configuration
+![MenuItem](./doc/images/MenuItem.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+| prop | Comment / Description |
+|----|---|
+| title | the text of the menu item
+| icon | the name of the icon (see Icon component)
 
-### Deployment
+## TextArea
+A multi-line text field with its label on top
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![TextArea](./doc/images/TextArea.png)
 
-### `yarn build` fails to minify
+| prop | Comment / Description |
+|----|---|
+| label | A caption for the text field
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## TextField
+A text field with its label on top
+
+![TextField](./doc/images/TextField.png)
+
+| prop | Comment / Description |
+|----|---|
+| label | A caption for the text field

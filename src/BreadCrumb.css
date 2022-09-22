@@ -1,0 +1,31 @@
+.breadCrumb {
+  font-size: 12px;
+  font-weight: normal;
+  height: 32px;
+  width: 100%;
+  border-bottom: 1px solid #4869bf;
+  display: flex;
+  flex-direction: row;
+  padding-left: 16px;
+}
+
+.breadCrumb-item, .breadCrumb-separator {
+  line-height: 18px;
+  margin-top: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.breadCrumb-item-last {
+  font-weight: bold;
+}
+
+.breadCrumb a { 
+  color: #4f6fc4;
+  text-decoration: none;
+}
+
+.breadCrumb a:hover { 
+  color: #4f6fc4;
+  text-decoration: underline  ;
+}

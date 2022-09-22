@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import { Shell, ShellBody } from './Shell';
+import HeaderBar from './HeaderBar';
+import LeftMenuRail from './LeftMenuRail';
+import Content from './Content';
+import BreadCrumb from './BreadCrumb';
+import RightRail from './RightRail';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Shell>
+        <HeaderBar title="Welcome to React-Blueprints" logo="anchor"></HeaderBar>
+          <ShellBody>
+            <LeftMenuRail collapsed={false}></LeftMenuRail>
+            <Content>
+              <BreadCrumb items={[ "Audiences", "Add new audience source" ]}></BreadCrumb>
+              <RightRail></RightRail>
+            </Content>
+          </ShellBody>
+      </Shell>
     </div>
   );
 }
 
 export default App;
+
